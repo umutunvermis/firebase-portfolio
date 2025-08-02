@@ -1,0 +1,50 @@
+.cardboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  padding: 20px;
+  width: calc(100% - 40px); /* Adjusted for padding */
+}
+
+.cardboard .card {
+  flex: 1;
+  min-width: 0; /* Allows cards to shrink properly */
+  display: flex;
+  flex-direction: column;
+}
+
+.cardboard .card-title {
+  flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .cardboard {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cardboard {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .cardboard .card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .cardboard {
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .cardboard .card {
+    flex: 0 0 100%;
+  }
+}

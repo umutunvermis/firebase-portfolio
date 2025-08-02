@@ -1,0 +1,37 @@
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    max-width: 250px;
+    display: inline-block;
+}
+
+/* Image container for fixed size and cropping */
+.card .card-image-container {
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    overflow: hidden; /* Hide any overflowing parts */
+    border-radius: 50%; /* Make the container circular */
+    margin-bottom: 10px;
+}
+
+/* Image styling */
+.card .card-image {
+    width: 100%; /* Fill the container horizontally */
+    height: 100%; /* Fill the container vertically */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+}
+.card .card-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: hsl(214, 53%, 45%);
+}
+
+.card .card-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: hsl(214, 40%, 50%);
+}
